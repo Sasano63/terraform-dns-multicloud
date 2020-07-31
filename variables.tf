@@ -24,6 +24,13 @@ variable "create_aws_dns_zone" {
   default     = "false"
 }
 
+variable "aws_region" {
+  description = "aws region to use for connection"
+  type        = string
+  default     = "eu-west-2"
+}
+
+
 # Azure
 
 variable "create_azure_dns_zone" {
