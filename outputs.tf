@@ -25,3 +25,7 @@ output "gcp_dns_zone_name" {
 output "gcp_dns_zone_nameservers" {
   value = var.create_gcp_dns_zone ? google_dns_managed_zone.gcp_sub_zone[0].name_servers : []
 }
+
+output "example" {
+  value = var.create_gcp_dns_zone ? google_dns_managed_zone.gcp_sub_zone[0].name_servers : []
+}
