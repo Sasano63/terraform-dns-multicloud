@@ -44,14 +44,14 @@ variable "aws_region" {
 #   default     = "West Europe"
 # }
 
-# # GCP
+# GCP
 
-# variable "create_gcp_dns_zone" {
-#   description = "Set to true if you want to deploy the Azure delegated zone."
-#   type        = bool
-#   default     = "false"
-# }
+variable "create_gcp_dns_zone" {
+  description = "Set to true if you want to deploy the Azure delegated zone."
+  type        = bool
+  default     = "false"
+}
 
-# variable "gcp_project" {
-#   description = "GCP project name"
-# }
+variable "gcp_project" {
+  description = "GCP project name"
+}
